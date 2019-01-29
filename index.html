@@ -3,20 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <title>Miguelangel Rendon</title>
+    <link rel="icon"  type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <div>
+        <figure>
+          <img src="./img/logo.png" alt="Logo Miguelangel">
+        </figure>
         <nav>
           <ol>
             <li>
-              <a>Portafolio</a>
+              <a href="#portafolio">Portafolio</a>
             </li>
             <li>
-              <a>Experiencia</a>
+              <a href="#eventos">Experiencia</a>
             </li>
             <li>
-              <a>Trabajemos juntos</a>
+              <a href="#contacto">Trabajemos juntos</a>
             </li>
           </ol>
         </nav>
@@ -26,19 +31,23 @@
       <h1>
          Hola! soy <strong> Miguelangel Rendón</strong> Desarrollador <br> <strong>javascript</strong>  con  <br> fascinación a aprender.
       </h1>
-      <img>
+      <img src="img/hero.png" alt="Mi imagen Heroe de la portada." width="500" height="300">
     </section>
-    <section>
+    <section id="portafolio">
       <h2>Portafolio (Proyectos destacados)</h2>
       <article>
+        <figure>
+          <img src="img/platzi-conf.jpg" alt="Evento platzi-conf" width="500">
+        </figure>
         <h3>Platzi video</h3>
         <h6>React Native / React </h6>
         <p><small><strong>Fecha: </strong>01/07/2018</small></p>
         <p><small><strong>Puedes verlo en :</strong> www.platzi.com/native </small></p>
         <p>Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+      <img src="img/platzi-video-react-native.png" alt="Video de platzi-video-react-native" width="500">
       </article>
     </section>
-    <section>
+    <section id="eventos">
       <h2>Mas sobre mi experiencia</h2>
       <article>
         <figure>
@@ -48,10 +57,16 @@
         <p>
             El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto cómo tener una vida de constante aprendizaje.
         </p>
-        <a>Ver platica</a>
+        <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_black">Ver platica</a>
       </article>
     </section>
-    <section>Sección contacto</section>
+    <section id="contacto">
+      <form action="/suscription/">
+       <h3>Creemos algo juntos?</h3>
+       <input type="text" placeholder="Dajame tu Email " id="email">
+      <button> Enviar</button>
+      </form>
+    </section>
     <footer>Footer</footer>
   </body>
 </html>
