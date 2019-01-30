@@ -1,0 +1,15 @@
+.flexbox {
+  display:flex;
+  flex-direction: row;
+  /* Por defecto tenemos un no wrap para que no se acomoden los elementos */
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  height:300px;
+  border: 1px solid red;0
+
+  /* sirve para que nunca de los elemento no se encojibles */
+  flex-shrink: 0;
+}
