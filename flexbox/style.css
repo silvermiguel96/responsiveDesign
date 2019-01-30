@@ -1,14 +1,26 @@
 .flexbox {
+  height:200px;
   display:flex;
   flex-direction: row;
-  /* Por defecto tenemos un no wrap para que no se acomoden los elementos */
+  /* Por defecto tenemos un no wrap para que no se acomoden los elementos 
+  flex-wrap: nowrap;*/
+  /* justify-content: space-around; Donde podemos mirar un pequeno cambios en los bordes de la pantalla */
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  border: 1px solid blue;
+  align-items: center;
+  /* center Centrar elementos */
+  /* flex-direction: column;
+  justify-content: center;
+  
+  Recordar que los elementos cambias de poscion segun su  modo horizontal o vertical*/
 }
 
 .box {
-  width: 300px;
-  height:300px;
-  border: 1px solid red;0
+  width: 50px;
+  height:50px;
+  border: 1px solid red;
 
   /* sirve para que nunca de los elemento no se encojibles */
   flex-shrink: 0;
