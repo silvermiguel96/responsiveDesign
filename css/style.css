@@ -26,7 +26,7 @@ h1 {
   line-height: 1.5;
   letter-spacing: -.2px;
   color: white;
-  margin: 
+  margin: 0;
   /* text-transform: uppercase;
   text-decoration: underline; */
 }
@@ -41,6 +41,8 @@ h1 strong {
   background-repeat: no-repeat;
   background-position-x: right;
   background-color: #1d252c;
+  display:flex;
+  align-items: center;
 }
 
 .portfolio {
@@ -66,12 +68,20 @@ h1 strong {
   width: 500px
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+}
+
 .header {
   background-color: #080808;
   color: white;
   display:flex;
   justify-content: space-between;
-  height: 90px;
+  height: 70px;
 }
 ol,ul {
   margin:0;
@@ -105,4 +115,21 @@ figure {
   align-items: center;
   height: inherit;
   padding: 0 10px;
+}
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer  img {
+  vertical-align: middle;
+  width: 100px;
+}
+
+.footer a {
+  color: white;
 }
