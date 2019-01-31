@@ -9,68 +9,81 @@
   </head>
   <body>
     <header class="header">
-        <figure class="logo">
-          <img src="./img/logo.png" alt="Logo Miguelangel">
-        </figure>
-        <nav class="menu">
-          <ol>
-            <li>
-              <a href="#portafolio">Portafolio</a>
-            </li>
-            <li>
-              <a href="#eventos">Experiencia</a>
-            </li>
-            <li>
-              <a href="#contacto">Trabajemos juntos</a>
-            </li>
-          </ol>
-        </nav>
+      <div class="container">
+          <figure class="logo">
+              <img src="./img/logo.png" alt="Logo Miguelangel">
+            </figure>
+            <nav class="menu">
+              <ol>
+                <li>
+                  <a href="#portafolio">Portafolio</a>
+                </li>
+                <li>
+                  <a href="#eventos">Experiencia</a>
+                </li>
+                <li>
+                  <a href="#contacto">Trabajemos juntos</a>
+                </li>
+              </ol>
+            </nav>
+      </div>
     </header>
+
     <section class="hero">
+      <div class="container">
       <h1>
          Hola! soy <strong> Miguelangel Rendón</strong> <br>Desarrollador <strong>javascript</strong>  con  <br> fascinación a aprender.
       </h1>
-      <!-- <img src="img/hero.png" alt="Mi imagen Heroe de la portada." width="500" height="300"> -->
+      <img class="hero-img" src="img/hero.png" alt="Mi imagen Heroe de la portada." width="500" height="300"> 
+      </div>
     </section>
+
     <section id="portafolio" class="portfolio">
-      <h2>Portafolio (Proyectos destacados)</h2>
-      <article class="project">
-        <div class="project-details">
-            <h3 class="project-title">Platzi video</h3>
-            <h6 class="project-course">React Native / React </h6>
-            <p  class="project-date"><small><strong>Fecha: </strong>01/07/2018</small></p>
-            <p  class="project-url"><small><strong>Puedes verlo en :</strong> www.platzi.com/native </small></p>
-            <p  class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app 
-              para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle,
-               hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros 
-               creadores de aplicaciones multiplataforma
-            </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img  class="project-image" src="img/platzi-video-react-native.png" alt="Video de platzi-video-react-native" width="500">
-        </figure>
-      </article>
-      <!-- Project Number two -->
-      <article class="project">
-          <div class="project-details">
-              <h3 class="project-title">Platzi video</h3>
-              <h6 class="project-course">React Native / React </h6>
-              <p  class="project-date"><small><strong>Fecha: </strong>01/07/2018</small></p>
-              <p  class="project-url"><small><strong>Puedes verlo en :</strong> www.platzi.com/native </small></p>
-              <p  class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app 
-                para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle,
-                 hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros 
-                 creadores de aplicaciones multiplataforma
-              </p>
-          </div>
-          <figure class="project-imageContainer">
-            <img  class="project-image" src="img/platzi-video-react-native.png" alt="Video de platzi-video-react-native" width="500">
-          </figure>
-        </article>
+      <div class="container">
+          <h2>Portafolio (Proyectos destacados)</h2>
+          <article class="project">
+            <div class="project-details">
+                <h3 class="project-title">Platzi video</h3>
+                <h6 class="project-course">React Native / React </h6>
+                <p  class="project-date"><small><strong>Fecha: </strong>01/07/2018</small></p>
+                <p  class="project-url"><small><strong>Puedes verlo en :</strong> www.platzi.com/native </small></p>
+                <p  class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app 
+                  para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle,
+                   hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros 
+                   creadores de aplicaciones multiplataforma
+                </p>
+            </div>
+            <figure class="project-imageContainer">
+              <img  class="project-image" src="img/platzi-video-react-native.png" alt="Video de platzi-video-react-native" width="500">
+            </figure>
+          </article>
+          <!-- Project Number two -->
+          <article class="project">
+              <div class="project-details">
+                  <h3 class="project-title">Platzi video</h3>
+                  <h6 class="project-course">React Native / React </h6>
+                  <p  class="project-date"><small><strong>Fecha: </strong>01/07/2018</small></p>
+                  <p  class="project-url"><small><strong>Puedes verlo en :</strong> www.platzi.com/native </small></p>
+                  <p  class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app 
+                    para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle,
+                     hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros 
+                     creadores de aplicaciones multiplataforma
+                  </p>
+              </div>
+              <figure class="project-imageContainer">
+                <img  class="project-image" src="img/platzi-video-react-native.png" alt="Video de platzi-video-react-native" width="500">
+              </figure>
+          </article>
+      </div>
+      
       </section>
-      <h2 class="event-list-title">Mas sobre mi experiencia</h2>
+      <div class="container">
+          <h2 class="event-list-title">Mas sobre mi experiencia</h2>
+      </div>
+
     <section id="eventos" class="event-list">
-      <article class="event">
+      <div class="container">
+        <article class="event">
         <figure class="event-imageContainer">
             <img class="event-image"src="img/platzi-conf.jpg" alt="Evento platzi-conf" width="500">
         </figure>
@@ -118,8 +131,11 @@
           <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_black">Ver platica</a>
         </div>
       </article>
+      </div>  
     </section>
+
     <section id="contacto" class="contact">
+      <div class="container">
       <form action="/suscription/" class="form-email">
        <h3>¿Creemos algo juntos?</h3>
        <input type="text" placeholder="Dejame tu email " id="email">
@@ -131,14 +147,22 @@
         <a href="https://github.com/silvermiguel96" class="social-link github"></a>
         <a href="https://www.instagram.com/silvermiguel13/" class="social-link instagram"></a>
       </div>
+      </div>
     </section>
+
     <footer class="footer">
-      <div><p> Curso de desarrolllo web online 2018 <img src="./img/platzi.png" alt="Logo platzi"></p></div>
+      <div class="container">
+      <div>
+        <p> Curso de desarrolllo web online 2018 <img src="./img/platzi.png" alt="Logo platzi">
+        </p>
+      </div>
       <div>
         <p>
           Designed with <\3 <a href="https://twitter.com/thespianartist?lang=es">@thespianartist</a>
         </p>
       </div>
+      </div>
+
     </footer>
   </body>
 </html>
