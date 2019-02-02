@@ -273,9 +273,7 @@ figure {
   height: inherit;
   flex-wrap: wrap;
 }
-
  /* Desktop first - Se recomienda empezar por el MQ mas grande  */
-
 @media screen and (max-width: 1024px){
 
 
@@ -289,5 +287,5 @@ figure {
 
 }
 @media screen and (max-width: 330px){
-  
+
 }
