@@ -61,7 +61,7 @@ h2 {
 
 .portfolio {
   background-color: #fafafa;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .project {
@@ -276,17 +276,37 @@ figure {
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
 }
  /* Desktop first - Se recomienda empezar por el MQ mas grande  */
 @media screen and (max-width: 1024px){
   .container {
-    padding: 1em;
+    padding: 0 1em;
+  }
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 2;
   }
 
 
 }
 @media screen and (max-width: 767px){
+
   .header{
     display: block;
     height: auto;
@@ -344,6 +364,9 @@ figure {
   }
 }
 @media screen and (max-width: 480px){
+  h1 {
+    font-size: 1em;
+  }
   .project-details {
     width: auto;
     font-size: 12px;
@@ -372,5 +395,10 @@ figure {
   }
 }
 @media screen and (max-width: 330px){
-
+  h1 { 
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 2em 1em;
+  }
 }
