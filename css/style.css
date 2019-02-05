@@ -47,9 +47,6 @@ font-family: 'Fjalla One', sans-serif; */
   content: "\eab0";
 }
 
-.icon-menu:before {
-  content: "\e9bd";
-}
 body {
   font-family: 'Source Sans Pro', sans-serif ;
   margin: 0;
@@ -270,6 +267,7 @@ figure {
   height: 50px;
   margin: 0 10px;
   background-size: 50px 50px;
+  color: white;
 }
 
 .social-link.twitter {
@@ -326,7 +324,7 @@ figure {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(27, 33, 39, .8);
   display: none;
   line-height: 40px;
   text-align: center;
@@ -398,9 +396,30 @@ figure {
   }
   .header a {
     justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
   }
   .header .logo {
     text-align: center;
+  }
+  .menu {
+    position:fixed;
+    background-color:rgba(27, 33, 39, .8);;
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    /* height:100vh; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 3;
+  }
+  .menu.is-active {
+    left: 0;
   }
   .project {
     display: block;
