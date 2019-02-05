@@ -416,7 +416,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 3;
+    transition: .3s;
   }
   .menu.is-active {
     left: 0;
